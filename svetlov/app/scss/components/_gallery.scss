@@ -1,0 +1,52 @@
+.gallery {
+    margin-bottom: 1rem;
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 - 0.9rem;
+    }
+
+    &-item {
+        color: $color-white;
+        font-size: 3.5rem;
+        margin: 0.9rem;
+        overflow: hidden;
+        position: relative;
+        width: calc(25% - 1.8rem);
+
+        &::before {
+            @include absolute(0, null, null, 0);
+            @include size(100%);
+            background-color: rgba($color-black, 0.85);
+            content: '';
+            opacity: 0;
+            transform: translate(-100%, -100%);
+            transition: all 0.4s ease;
+        }
+
+        img {
+            display: block;
+            font-family: 'object-fit: cover; object-position: center;';
+            object-fit: cover;
+        }
+
+        i {
+            @include absolute(50%, 50%);
+            opacity: 0;
+            transform: translate(50%, -50%);
+            transition: all 0.4s ease;
+        }
+
+        @include on-event() {
+            &::before {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
+            i {
+                opacity: 1;
+            }
+        }
+    }
+}

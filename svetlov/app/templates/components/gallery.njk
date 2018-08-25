@@ -1,0 +1,16 @@
+{% macro sectionGallery(title) %}
+    <section class="gallery">
+        <h2 class="section-title">
+            <span>{{ title }}</span>
+        </h2>
+        <div class="gallery-wrapper">
+            {%- for item in range(8) %}
+                {% set imgNumber = range(15, 30) | random %}
+                <a class="gallery-item" href="#">
+                    <img src="//picsum.photos/232/232?image={{ imgNumber }}" alt="image description">
+                    <i class="fas fa-eye"></i>
+                </a>
+            {%- endfor %}
+        </div>
+    </section>
+{% endmacro %}

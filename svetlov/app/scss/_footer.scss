@@ -1,0 +1,13 @@
+.footer {
+    padding: 2.5rem 0;
+    position: relative;
+
+    &-copyright {
+        @include absolute(null, 0, 0.8rem, null);
+        color: $color-1--1;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: 0;
+        transform: translateY(-100%);
+    }
+}

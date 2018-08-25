@@ -1,0 +1,22 @@
+.contact-info {
+    text-align: right;
+
+    &__item {
+        color: $color-black;
+        font-size: 1.6rem;
+        margin: 0;
+
+        &.-phone {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            @include on-event() {
+                text-decoration: underline;
+            }
+        }
+    }
+}

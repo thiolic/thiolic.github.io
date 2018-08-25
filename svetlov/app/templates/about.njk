@@ -1,0 +1,26 @@
+{% from 'components/hero.njk' import hero with context %}
+{% from 'components/gallery.njk' import sectionGallery with context %}
+
+{% extends 'components/layout.njk' %}
+
+{% block main %}
+    <section class="about">
+        <h2 class="section-title">
+            <span>Hey there</span>
+        </h2>
+        <div class="about-wrapper">
+            <p>
+                My name is Oleg, I'm photographer from Ukraine presently located in Berdyansk.<br>
+                From an early childhood my two biggest passions were to make new acquaintances and art.<br>
+                Photography helps me to do both. It gives me opportunity to meet lots of great people and to create stories with my photographs.
+            </p>
+            <p>
+                I have an unshakable desire to be better, an instinct for a good image, and a strong ambition to make a difference. I specialise on
+                <a href="weddings.html">weddings</a> and personal outdoor photoshoots.
+            </p>
+            <p>
+                For questions, inquiries, or just to say hello, send me a message here, or at oleg.maluhin@gmail.com.<br>I would love to hear from you!
+            </p>
+        </div>
+    </section>
+{% endblock %}

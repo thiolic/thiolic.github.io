@@ -1,0 +1,7 @@
+{% from 'components/hero.njk' import hero with context %}
+
+{% extends 'components/layout.njk' %}
+
+{% block main %}
+    {{ hero() }}
+{% endblock %}

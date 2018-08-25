@@ -1,0 +1,68 @@
+.hero {
+    &-slider {
+        position: relative;
+    }
+
+    &-item {
+        height: 53.5rem;
+        position: relative;
+
+        img {
+            @include size(100%);
+            display: block;
+            font-family: 'object-fit: cover; object-position: center;';
+            object-fit: cover;
+        }
+    }
+
+    &-title {
+        @include absolute(12rem, null, null, 9rem);
+        color: $color-white;
+        font-size: 2.4rem;
+        font-style: italic;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .slick-dotted {
+        &.slick-slider {
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-dots {
+        bottom: 1.5rem;
+        right: 1rem;
+        text-align: right;
+
+        li {
+            @include size(1.1rem);
+
+            button {
+                @include size(100%);
+                padding: 0;
+
+                &::before {
+                    @include size(100%);
+                    @include trs();
+                    background-color: transparent;
+                    border: 0.2rem solid $color-white;
+                    border-radius: 50%;
+                    color: $color-white;
+                    content: '';
+                    opacity: 1;
+                }
+            }
+            &.slick-active,
+            &:hover,
+            &:focus {
+                button {
+                    &::before {
+                        background-color: $color-white;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

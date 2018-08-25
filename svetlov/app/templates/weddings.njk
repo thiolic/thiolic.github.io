@@ -1,0 +1,8 @@
+{% from 'components/hero.njk' import hero with context %}
+{% from 'components/gallery.njk' import sectionGallery with context %}
+
+{% extends 'components/layout.njk' %}
+
+{% block main %}
+    {{ sectionGallery('Weddings') }}
+{% endblock %}

@@ -1,0 +1,24 @@
+@import '_mixins/core-mixins';
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'wrapper';
+@import 'header';
+@import 'components/menu';
+@import 'components/contact-info';
+@import 'components/logo';
+@import 'components/hero';
+@import 'footer';
+@import 'components/social-networks';
+@import 'components/gallery';
+@import 'components/about';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $default-font;
+    font-weight: 400;
+    line-height: 1;
+}

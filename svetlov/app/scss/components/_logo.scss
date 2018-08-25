@@ -1,0 +1,22 @@
+.logo {
+    @include absolute(null, null, 1.9rem, 50%);
+    transform: translate(-50%, 100%);
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        @include size(6.8rem);
+        display: block;
+        margin: 0 auto 1rem;
+    }
+
+    &-title {
+        color: $color-black;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
