@@ -30,8 +30,6 @@ $(function () {
             priceFull += parseInt($(this).val());
         });
 
-        paymentField.val(priceFull);
-
         return priceFull;
     }
 
@@ -106,6 +104,8 @@ $(function () {
         var discountEvents = 0;
         var discountStudent = 0;
 
+        var priceFull = totalPrice();
+
         var people = peopleInput.val();
 
         var totalDiscount = 0;
@@ -125,6 +125,9 @@ $(function () {
         });
 
         totalDiscount = discountPeople + discountEvents + discountStudent;
+
+        paymentField.val(priceFull - totalDiscount);
+
         return totalDiscount;
     }
 
