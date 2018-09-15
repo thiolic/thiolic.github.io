@@ -5,6 +5,12 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 - 0.9rem;
+
+        @include breakpoint(small down) {
+            flex-direction: column;
+            margin: 0;
+            padding: 0 0.5rem;
+        }
     }
 
     &-item {
@@ -14,6 +20,20 @@
         overflow: hidden;
         position: relative;
         width: calc(25% - 1.8rem);
+
+        @include breakpoint(medium down) {
+            width: calc(33.3333% - 1.8rem);
+        }
+
+        @include breakpoint(small down) {
+            margin: 0 auto 2rem;
+            max-width: 31.5rem;
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
 
         &::before {
             @include absolute(0, null, null, 0);
@@ -29,6 +49,7 @@
             display: block;
             font-family: 'object-fit: cover; object-position: center;';
             object-fit: cover;
+            width: 100%;
         }
 
         i {

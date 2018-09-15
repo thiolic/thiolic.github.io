@@ -8,12 +8,13 @@
         } %}
         <ul class="menu-list">
             {%- for item, link in navList %}
-                {%- if loop.last %}
-                    <li class="menu-item"><span>{{ item }}</span></li>
-                {%- else %}
+                {#{%- if loop.last %}#}
+                    {#<li class="menu-item"><span>{{ item }}</span></li>#}
+                {#{%- else %}#}
                     <li class="menu-item"><a href="{{ link }}" title="{{ item }}">{{ item }}</a></li>
-                {%- endif %}
+                {#{%- endif %}#}
             {%- endfor %}
+            <li class="menu-item"><p>«There is more to you<br>than meets the eye»</p></li>
         </ul>
     </nav>
 {% endmacro %}

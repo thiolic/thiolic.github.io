@@ -1,11 +1,16 @@
 .container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 98rem;
+    max-width: 102rem;
     margin: 0 auto;
     min-height: 100vh;
+    padding: 0 2rem;
     width: 100%;
+
+    @include breakpoint(small down) {
+        padding: 0;
+    }
 }
 
 .section-title {
@@ -29,4 +34,16 @@
         transform: translate(50%, -50%);
         z-index: -1;
     }
+}
+
+.ghost {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    left: -9999px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: auto !important;
+    width: 1px !important;
 }

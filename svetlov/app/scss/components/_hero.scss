@@ -7,11 +7,19 @@
         height: 53.5rem;
         position: relative;
 
+        @include breakpoint(small down) {
+            height: auto;
+        }
+
         img {
             @include size(100%);
             display: block;
             font-family: 'object-fit: cover; object-position: center;';
             object-fit: cover;
+
+            @include breakpoint(medium down) {
+                height: auto;
+            }
         }
     }
 
@@ -22,6 +30,10 @@
         font-style: italic;
         font-weight: 200;
         margin: 0;
+
+        @include breakpoint(small down) {
+            display: none;
+        }
     }
 
     .slick-dotted {
@@ -34,6 +46,10 @@
         bottom: 1.5rem;
         right: 1rem;
         text-align: right;
+
+        @include breakpoint(small down) {
+            display: none;
+        }
 
         li {
             @include size(1.1rem);

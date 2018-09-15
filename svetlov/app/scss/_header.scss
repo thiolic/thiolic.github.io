@@ -1,8 +1,21 @@
 .header {
     align-items: flex-start;
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     justify-content: space-between;
-    margin-bottom: 9rem;
+    margin-bottom: 10rem;
     padding-top: 3rem;
     position: relative;
+
+    @include breakpoint(medium down) {
+        margin-bottom: 14rem;
+    }
+
+    @include breakpoint(small down) {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+        padding-top: 5.5rem;
+    }
 }

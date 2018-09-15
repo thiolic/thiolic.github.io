@@ -1,6 +1,11 @@
 .contact-info {
     text-align: right;
 
+    @include breakpoint(small down) {
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
     &__item {
         color: $color-black;
         font-size: 1.6rem;

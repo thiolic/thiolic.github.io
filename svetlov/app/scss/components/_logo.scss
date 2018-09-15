@@ -2,6 +2,15 @@
     @include absolute(null, null, 1.9rem, 50%);
     transform: translate(-50%, 100%);
 
+    @include breakpoint(medium down) {
+        bottom: -1.5rem;
+    }
+
+    @include breakpoint(small down) {
+        @include reset-position();
+        transform: translate(0, 0);
+    }
+
     a {
         text-decoration: none;
     }

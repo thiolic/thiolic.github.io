@@ -1,6 +1,12 @@
 .footer {
+    flex-grow: 0;
+    flex-shrink: 0;
     padding: 2.5rem 0;
     position: relative;
+
+    @include breakpoint(small down) {
+        margin-top: 2.5rem;
+    }
 
     &-copyright {
         @include absolute(null, 0, 0.8rem, null);
@@ -9,5 +15,9 @@
         font-weight: 400;
         margin: 0;
         transform: translateY(-100%);
+
+        @include breakpoint(small down) {
+            display: none;
+        }
     }
 }
