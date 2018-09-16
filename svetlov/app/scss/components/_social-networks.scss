@@ -33,9 +33,13 @@
         border-radius: 50%;
         color: $color-white;
         display: flex;
-        font-size: 2rem;
+        //font-size: 2rem;
         justify-content: center;
         text-decoration: none;
+
+        i {
+            font-size: 2rem;
+        }
 
         @include on-event() {
             background-color: $color-1--1;
