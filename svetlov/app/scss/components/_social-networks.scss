@@ -23,18 +23,19 @@
 
     &__item {
         margin: 0 1rem;
-        text-align: center;
     }
 
     &__link {
         @include size(3.7rem);
         @include trs();
+        align-items: center;
         background-color: $color-black;
         border-radius: 50%;
         color: $color-white;
-        display: block;
+        display: flex;
         font-size: 2rem;
-        line-height: 3.7rem;
+        justify-content: center;
+        text-decoration: none;
 
         @include on-event() {
             background-color: $color-1--1;
