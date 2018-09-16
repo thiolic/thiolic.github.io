@@ -27,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_social-networks.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_social-networks.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/components/_social-networks.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
               <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scss/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -158,13 +168,13 @@
         <option value="$PROJECT_DIR$/app/scss/components/_gallery.scss" />
         <option value="$PROJECT_DIR$/app/scss/_wrapper.scss" />
         <option value="$PROJECT_DIR$/app/scss/_header.scss" />
-        <option value="$PROJECT_DIR$/app/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/app/scss/main.scss" />
         <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
         <option value="$PROJECT_DIR$/app/templates/about.njk" />
         <option value="$PROJECT_DIR$/app/templates/contact.njk" />
         <option value="$PROJECT_DIR$/app/scss/components/_contact.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_social-networks.scss" />
+        <option value="$PROJECT_DIR$/app/scss/_footer.scss" />
       </list>
     </option>
   </component>
@@ -425,12 +435,12 @@
       <workItem from="1535188377207" duration="21361000" />
       <workItem from="1536601829895" duration="3630000" />
       <workItem from="1537011528083" duration="10608000" />
-      <workItem from="1537116017604" duration="1974000" />
+      <workItem from="1537116017604" duration="2676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37573000" />
+    <option name="totallyTimeSpent" value="38275000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,6 +566,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,6 +596,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_wrapper.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -833,6 +837,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
           <folding />
         </state>
       </provider>
