@@ -46,6 +46,7 @@ gulp.task('js', function () {
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/slick/slick.min.js',
         'app/libs/object-fit-images/ofi.min.js',
+        'app/libs/fancybox/jquery.fancybox.min.js',
         'app/js/common.js',
         ])
         .pipe(babel({

@@ -1,7 +1,47 @@
 .gallery {
     margin-bottom: 1rem;
 
+    .section-title {
+        span {
+            display: inline-block;
+            width: 11rem;
+        }
+    }
+
     &-wrapper {
+        svg {
+            @include size(2.9rem);
+            @include trs();
+            cursor: pointer;
+            fill: $color-black;
+
+            @include on-event() {
+                fill: $color-1--1;
+            }
+
+            &.slick-disabled {
+                fill: $color-1--1
+            }
+
+            &.gallery-prev,
+            &.gallery-next {
+                position: absolute;
+                top: -5.1rem;
+            }
+
+            &.gallery-prev {
+                left: 50%;
+                transform: translateX(-8.5rem);
+            }
+
+            &.gallery-next {
+                right: 50%;
+                transform: translateX(8rem);
+            }
+        }
+    }
+
+    &-items {
         display: flex;
         flex-wrap: wrap;
         margin: 0 - 0.9rem;
