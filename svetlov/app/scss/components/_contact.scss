@@ -32,12 +32,12 @@
         font-size: 2rem;
         font-weight: 700;
         line-height: 2.4rem;
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         padding: .4rem 2.15rem .7rem;
 
         @include breakpoint(small down) {
             display: block;
-            margin: 2.5rem auto 0;
+            margin: 1.5rem auto 0;
         }
 
         @include on-event() {

@@ -1,12 +1,6 @@
 .footer {
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0 2.5rem;
     position: relative;
-
-    @include breakpoint(small down) {
-        margin-top: 2.5rem;
-    }
 
     &-copyright {
         @include absolute(null, 0, 0.8rem, null);
