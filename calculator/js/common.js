@@ -11,8 +11,7 @@ $(function () {
 
     $('.add').on('click', function () {
         $('.all-select .one-select:first-child').clone().appendTo('.all-select');
-
-        // removeSelect();
+        removeSelect();
     });
 
     $(document).on('change', 'select', function () {
@@ -20,9 +19,11 @@ $(function () {
         $(this).next().find('input').val(price2);
     });
 
-    // function removeSelect() {
-    //
-    // }
+   function removeSelect() {
+       $('.remove-select').on('click', function () {
+           $(this).parent().remove();
+       });
+   }
 
     function totalPrice() {
         var priceFull = 0;
