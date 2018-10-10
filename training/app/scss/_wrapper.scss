@@ -1,0 +1,47 @@
+.container {
+    box-sizing: border-box;
+    max-width: 102rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 2rem;
+    width: 100%;
+
+    @include breakpoint(small down) {
+        padding: 0;
+    }
+}
+
+.section-title {
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 2.7rem;
+    position: relative;
+    text-align: center;
+
+    span {
+        background-color: $color-white;
+        padding: 0 4.5rem;
+    }
+
+    &::before {
+        @include absolute(50%, 50%);
+        @include size(100%, 0.2rem);
+        background-color: $color-1--2;
+        content: '';
+        transform: translate(50%, -50%);
+        z-index: -1;
+    }
+}
+
+.ghost {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    left: -9999px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: auto !important;
+    width: 1px !important;
+}

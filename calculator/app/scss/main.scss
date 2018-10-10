@@ -1,0 +1,134 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.middle {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom {
+	display: flex;
+	margin-top: 3rem;
+}
+
+.all-select {
+	display: flex;
+	flex-direction: column;
+}
+
+.one-select {
+	display: flex;
+	margin-bottom: 1rem;
+
+	&:first-child {
+		margin-left: 3.2rem;
+
+		button {
+			display: none;
+		}
+	}
+
+	.price {
+		margin-left: 2rem;
+	}
+}
+
+.options {
+	list-style: none;
+	margin: 0 0 2rem;
+	padding: 0;
+
+	li {
+		display: inline-block;
+
+		button {
+			cursor: pointer;
+		}
+		
+		&.active {
+			button {
+				background-color: grey;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.add {
+	cursor: pointer;
+}
+
+.to-count {
+	cursor: pointer;
+}
+
+.payment {
+	margin-left: 2rem;
+}
+
+.remove-select {
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	height: 2rem;
+	margin-right: 1rem;
+	transition: all 0.3s ease;
+	width: 2rem;
+	
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+@import "media"; // Always at the end
