@@ -5,6 +5,7 @@ $(function () {
     var peopleInput = $('.people');
     var stepInput = $('.step');
     var discountInput = $('.discount');
+    var allPayment = $('.all-payment');
 
     peopleInput.val(2);
     priceField.val(priceStart);
@@ -31,6 +32,8 @@ $(function () {
             priceFull += parseInt($(this).val());
         });
 
+        // allPayment.val(priceFull);
+
         return priceFull;
     }
 
@@ -38,9 +41,11 @@ $(function () {
         if (!$('.tab3').hasClass('active')) {
             var localDiscount = 0;
             var priceFull = totalPrice();
+            console.log(priceFull);
             var discount = getDiscounts('members', person);
 
-            localDiscount = priceFull - discount;
+            localDiscount = (priceFull * person) - (discount * person);
+            console.log(localDiscount);
 
             return localDiscount;
         } else {
@@ -149,7 +154,8 @@ $(function () {
 
         totalDiscount = discountPeople + discountEvents + discountStudent;
 
-        paymentField.val(priceFull - totalDiscount);
+        paymentField.val(priceFull * people - totalDiscount);
+        allPayment.val(priceFull * people);
 
         return totalDiscount;
     }
