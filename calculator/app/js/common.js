@@ -7,7 +7,7 @@ $(function () {
     var discountInput = $('.discount');
     var allPayment = $('.all-payment');
 
-    peopleInput.val(2);
+    peopleInput.val(1);
     priceField.val(priceStart);
 
     $('.add').on('click', function () {
@@ -32,8 +32,6 @@ $(function () {
             priceFull += parseInt($(this).val());
         });
 
-        // allPayment.val(priceFull);
-
         return priceFull;
     }
 
@@ -41,11 +39,9 @@ $(function () {
         if (!$('.tab3').hasClass('active')) {
             var localDiscount = 0;
             var priceFull = totalPrice();
-            console.log(priceFull);
             var discount = getDiscounts('members', person);
 
             localDiscount = (priceFull * person) - (discount * person);
-            console.log(localDiscount);
 
             return localDiscount;
         } else {
@@ -105,8 +101,6 @@ $(function () {
         var person = 0;
         var flagStudents = $('#check1').prop('checked');
 
-        console.log(flagStudents);
-
         if ($('.tab1').hasClass('active')) {
             person = position;
         } else {
@@ -122,7 +116,7 @@ $(function () {
             discount = getDiscounts('members', person);
         }
 
-        localDiscount = priceFull - discount;
+        localDiscount = (priceFull * person) - (discount * person);
 
         return localDiscount;
     }
