@@ -43,8 +43,8 @@
     }
 
     .slick-dots {
-        bottom: 1.5rem;
-        right: 1rem;
+        bottom: 2rem;
+        right: 1.8rem;
         text-align: right;
 
         @include breakpoint(small down) {
@@ -52,14 +52,15 @@
         }
 
         li {
-            @include size(1.1rem);
+            @include size(0.7rem);
+            margin: 0 0.6rem;
 
             button {
                 @include size(100%);
                 padding: 0;
 
                 &::before {
-                    @include size(100%);
+                    @include size(0.7rem);
                     @include trs();
                     background-color: transparent;
                     border: 0.2rem solid $color-white;
