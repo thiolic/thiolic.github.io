@@ -45,27 +45,17 @@
         }
 
         a {
+            @include trs();
             color: inherit;
             display: block;
-            position: relative;
             text-decoration: none;
 
             @include breakpoint(small down) {
                 display: inline-block;
             }
 
-            &::after {
-                @include absolute($bottom: -0.3rem, $left: 0);
-                @include size(0, 0.2rem);
-                @include trs();
-                background-color: $color-black;
-                content: '';
-            }
-
             @include on-event() {
-                &::after {
-                    width: 100%;
-                }
+                color: #f11a0e;
             }
         }
 
