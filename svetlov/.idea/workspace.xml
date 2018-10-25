@@ -23,8 +23,8 @@
           <file leaf-file-name="_contact.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_contact.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="638">
-                  <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+                <state relative-caret-position="350">
+                  <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -424,12 +424,12 @@
       <workItem from="1538317905543" duration="39000" />
       <workItem from="1540139212176" duration="3283000" />
       <workItem from="1540233242442" duration="634000" />
-      <workItem from="1540491795576" duration="1457000" />
+      <workItem from="1540491795576" duration="1800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50123000" />
+    <option name="totallyTimeSpent" value="50466000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_contact.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="350">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>

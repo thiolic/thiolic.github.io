@@ -31,9 +31,9 @@
         cursor: pointer;
         font-size: 2rem;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 1;
         margin-top: 1.5rem;
-        padding: .4rem 2.15rem .7rem;
+        padding: .7rem 2.15rem;
 
         @include breakpoint(small down) {
             display: block;
