@@ -26,24 +26,23 @@
     }
 
     &__link {
-        @include size(3.7rem);
-        @include trs();
+        @include size(3.6rem);
         align-items: center;
-        background-color: $color-black;
         border-radius: 50%;
-        color: $color-white;
         display: flex;
         //font-size: 2rem;
         justify-content: center;
         text-decoration: none;
 
-        i {
-            font-size: 2rem;
+        svg {
+            @include size(3.6rem);
+            @include trs();
         }
 
         @include on-event() {
-            background-color: $color-1--1;
-            color: $color-black;
+            svg {
+                fill: #f11a0e;
+            }
         }
     }
 }
