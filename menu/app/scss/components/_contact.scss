@@ -1,0 +1,48 @@
+.contact {
+    form {
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    &-wrap {
+        margin: 0 -1rem;
+
+        @include breakpoint(small down) {
+            margin: 0 auto;
+            width: calc(100% - 9rem);
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+
+        label {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-submit {
+        @include trs();
+        background-color: transparent;
+        border: 0.3rem solid #c2c2c2;
+        color: #c2c2c2;
+        cursor: pointer;
+        font-family: $default-font;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        padding: .7rem 2.15rem;
+
+        @include breakpoint(small down) {
+            display: block;
+            margin: 1.5rem auto 0;
+        }
+
+        @include on-event() {
+            border-color: $color-black;
+            color: $color-black;
+        }
+    }
+}

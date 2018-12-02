@@ -1,0 +1,47 @@
+.social-networks {
+    position: relative;
+
+    &::before {
+        @include absolute(50%, 50%);
+        @include size(100%, 0.2rem);
+        background-color: $color-1--2;
+        content: '';
+        transform: translate(50%, -50%);
+        z-index: -1;
+    }
+
+    &__listitems {
+        align-items: center;
+        background-color: $color-white;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 24rem;
+    }
+
+    &__item {
+        margin: 0 1rem;
+    }
+
+    &__link {
+        @include size(3.7rem);
+        @include trs();
+        align-items: center;
+        background-color: $color-black;
+        border-radius: 50%;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+
+        i {
+            font-size: 2rem;
+        }
+
+        @include on-event() {
+            background-color: #f11a0e;
+        }
+    }
+}

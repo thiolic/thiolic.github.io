@@ -1,0 +1,85 @@
+.hero {
+    &-slider {
+        position: relative;
+    }
+
+    &-item {
+        height: 53.5rem;
+        position: relative;
+
+        @include breakpoint(small down) {
+            height: auto;
+        }
+
+        img {
+            @include size(100%);
+            display: block;
+            font-family: 'object-fit: cover; object-position: center;';
+            object-fit: cover;
+
+            @include breakpoint(medium down) {
+                height: auto;
+            }
+        }
+    }
+
+    &-title {
+        @include absolute(12rem, null, null, 9rem);
+        color: $color-white;
+        font-size: 2.4rem;
+        font-style: italic;
+        font-weight: 200;
+        margin: 0;
+
+        @include breakpoint(small down) {
+            display: none;
+        }
+    }
+
+    .slick-dotted {
+        &.slick-slider {
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-dots {
+        bottom: 2rem;
+        right: 1.8rem;
+        text-align: right;
+
+        @include breakpoint(small down) {
+            display: none;
+        }
+
+        li {
+            @include size(0.7rem);
+            margin: 0 0.6rem;
+
+            button {
+                @include size(100%);
+                padding: 0;
+
+                &::before {
+                    @include size(0.7rem);
+                    @include trs();
+                    background-color: transparent;
+                    border: 0.2rem solid $color-white;
+                    border-radius: 50%;
+                    color: $color-white;
+                    content: '';
+                    opacity: 1;
+                }
+            }
+            &.slick-active,
+            &:hover,
+            &:focus {
+                button {
+                    &::before {
+                        background-color: $color-white;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

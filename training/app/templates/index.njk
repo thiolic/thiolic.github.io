@@ -11,10 +11,41 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <meta name="theme-color" content="#000">
     <link rel="stylesheet" href="css/main.min.css">
+    <script type="text/javascript" src="../data.json"></script>
 </head>
 <body>
-<div class="site-wrapper">
+<script>
+    function loadJSON(file, callback) {
 
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', file, true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+
+
+    function load() {
+
+        loadJSON("data.json", function(response) {
+
+            var actual_JSON = JSON.parse(response);
+            console.log(actual_JSON);
+        });
+
+
+    }
+
+    load();
+
+</script>
+<div class="site-wrapper">
+    <p id="demo"></p>
 </div>
 <script src="js/scripts.min.js"></script>
 </body>
