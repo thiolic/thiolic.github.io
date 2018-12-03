@@ -130,7 +130,7 @@
             }
         }
 
-        @include on-event() {
+        &.-is-open {
             #{$this}-toggle__line {
                 &:nth-child(1) {
                     margin-top: -0.1rem;
