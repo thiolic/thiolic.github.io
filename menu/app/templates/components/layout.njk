@@ -25,12 +25,15 @@
             <span class="menu-toggle__text">Menu</span>
         </button>
         <div class="menu-wrapper">
-            <div class="overlay"></div>
+            <div class="overlay">
+                <div class="contact-info">
+                    <a href="#">hello@ks.graphics</a>
+                </div>
+            </div>
             <div class="nav-wrapper">
-
+                {{ mainMenu() }}
             </div>
         </div>
-        {{ mainMenu() }}
     </header>
     <main>
         {% block main %}{% endblock %}

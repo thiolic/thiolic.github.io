@@ -1,3 +1,4 @@
 @import "_mixins/font-face";
 
-@include font-face("stem", "../fonts/Stem/StemRegular");
+@include font-face("sans", "../fonts/sans/GoogleSansRegular");
+@include font-face("beluga", "../fonts/beluga/BelugaScript");
