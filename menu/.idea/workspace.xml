@@ -20,11 +20,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.88077337">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="231" column="78" lean-forward="false" selection-start-line="231" selection-start-column="78" selection-end-line="231" selection-end-column="78" />
+                <state relative-caret-position="494">
+                  <caret line="224" column="17" lean-forward="true" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
                   <folding>
                     <element signature="e#2027#3689#0" expanded="false" />
                   </folding>
@@ -32,11 +32,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="layout.njk" pinned="false" current-in-tab="false">
+          <file leaf-file-name="layout.njk" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+                <state relative-caret-position="548">
+                  <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -136,10 +136,10 @@
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/templates/components/menu.njk" />
         <option value="$PROJECT_DIR$/app/scss/components/_contact.scss" />
-        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
-        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
         <option value="$PROJECT_DIR$/app/scss/components/_social-networks.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
+        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
       </list>
     </option>
   </component>
@@ -519,12 +519,12 @@
       <workItem from="1540929724662" duration="596000" />
       <workItem from="1543768277163" duration="8176000" />
       <workItem from="1543862607603" duration="6255000" />
-      <workItem from="1543948193279" duration="3209000" />
+      <workItem from="1543948193279" duration="4698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73088000" />
+    <option name="totallyTimeSpent" value="74577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_social-networks.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -853,11 +845,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="231" column="78" lean-forward="false" selection-start-line="231" selection-start-column="78" selection-end-line="231" selection-end-column="78" />
+        <state relative-caret-position="494">
+          <caret line="224" column="17" lean-forward="true" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
           <folding>
             <element signature="e#2027#3689#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
