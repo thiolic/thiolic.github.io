@@ -16,10 +16,10 @@
     <favorites_list name="portfolio" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.71911925">
+    <splitter split-orientation="horizontal" split-proportion="0.8922632">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="376">
@@ -27,6 +27,16 @@
                   <folding>
                     <element signature="e#2027#3689#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="layout.njk" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="682">
+                  <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -107,10 +117,10 @@
         <option value="$PROJECT_DIR$/app/scss/components/_social-networks.scss" />
         <option value="$PROJECT_DIR$/app/css/style-mohe.css" />
         <option value="$PROJECT_DIR$/app/css/demo.css" />
-        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
-        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
         <option value="$PROJECT_DIR$/app/scss/_vars.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
+        <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
       </list>
     </option>
   </component>
@@ -244,6 +254,13 @@
               <item name="menu" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="menu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="menu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -383,12 +400,12 @@
       <workItem from="1543862607603" duration="6255000" />
       <workItem from="1543948193279" duration="4698000" />
       <workItem from="1544046023432" duration="1399000" />
-      <workItem from="1544118584046" duration="4424000" />
+      <workItem from="1544118584046" duration="4584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80400000" />
+    <option name="totallyTimeSpent" value="80560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -688,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="198" lean-forward="false" selection-start-line="16" selection-start-column="198" selection-end-line="16" selection-end-column="198" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_vars.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -711,6 +720,14 @@
           <folding>
             <element signature="e#2027#3689#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/layout.njk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
