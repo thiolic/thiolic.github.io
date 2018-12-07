@@ -1,13 +1,28 @@
 {% macro mainMenu() %}
     <nav class="menu">
-        {% set navList = {
-            'Portfolio': 'portfolio.html',
-            'New project': 'new-project.html',
-            'Blog': 'blog.html'
-        } %}
+        {% set navList = [
+            {
+                title: 'Portfolio',
+                text: 'discover favourites',
+                link: 'portfolio.html'
+            },{
+                title: 'New project',
+                text: 'offer cooperation',
+                link: 'new-project.html'
+            },{
+                title: 'Blog',
+                text: 'spark of thoughts',
+                link: 'blog.html'
+            }
+        ] %}
         <ul class="menu-list">
-            {%- for item, link in navList %}
-                <li class="menu-item"><a href="{{ link }}" title="{{ item }}">{{ item }}</a></li>
+            {%- for item in navList %}
+                <li class="menu-item">
+                    <a href="{{ item.link }}" title="{{ item.title }}">
+                        <span class="menu-item__name">{{ item.title }}</span>
+                        <span class="menu-item__label">{{ item.text }}</span>
+                    </a>
+                </li>
             {%- endfor %}
         </ul>
     </nav>

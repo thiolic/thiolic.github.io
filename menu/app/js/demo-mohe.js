@@ -4,18 +4,18 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
 {
-	const items = Array.from(document.querySelectorAll('.menu > .menu__item'));
+	const items = Array.from(document.querySelectorAll('.menu-item a'));
 
 	class Item {
 		constructor(el) {
 			this.DOM = {};
 			this.DOM.el = el;
-			this.DOM.name = el.querySelector('.menu__item-name');
+			this.DOM.name = el.querySelector('.menu-item__name');
 			charming(this.DOM.name);
 			this.DOM.nameLetters = Array.from(this.DOM.name.querySelectorAll('span'));
 			this.initEvents();
@@ -33,7 +33,7 @@
 						const elBounds = this.DOM.el.getBoundingClientRect();
 						const x1 = elBounds.left + elBounds.width/2;
 						const y1 = elBounds.top + elBounds.height/2;
-						
+
 						const targetBounds = t.getBoundingClientRect();
 						const x2 = targetBounds.left + targetBounds.width/2;
 						const y2 = targetBounds.top + targetBounds.height/2;
@@ -47,7 +47,7 @@
 					translateY: (t,i) => [0,anime.random(-40,40)],
 					rotateZ: (t,i) => [0,anime.random(-20,20)],
 					opacity: (t,i) => 0.3,
-				});	
+				});
 			}, 50);
 
 			this.mouseleaveFn = () => {
