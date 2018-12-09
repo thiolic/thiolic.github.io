@@ -19,11 +19,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.7630662">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="76" column="9" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="76" selection-end-column="9" />
+                <state relative-caret-position="502">
+                  <caret line="221" column="30" lean-forward="false" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="30" />
                   <folding>
                     <element signature="e#2636#4298#0" expanded="false" />
                   </folding>
@@ -31,11 +31,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_social-networks.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_social-networks.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_social-networks.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="24" column="81" lean-forward="false" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+                <state relative-caret-position="306">
+                  <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
                   <folding />
                 </state>
               </provider>
@@ -142,8 +142,8 @@
         <option value="$PROJECT_DIR$/app/scss/main.scss" />
         <option value="$PROJECT_DIR$/app/scss/_libs.scss" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/scss/components/_menu.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_social-networks.scss" />
+        <option value="$PROJECT_DIR$/app/scss/components/_menu.scss" />
       </list>
     </option>
   </component>
@@ -439,12 +439,12 @@
       <workItem from="1544118584046" duration="5301000" />
       <workItem from="1544211698588" duration="4855000" />
       <workItem from="1544286698922" duration="599000" />
-      <workItem from="1544356297069" duration="12500000" />
+      <workItem from="1544356297069" duration="12973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99231000" />
+    <option name="totallyTimeSpent" value="99704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,16 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="76" column="9" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="e#2636#4298#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/components/social-networks.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -763,9 +753,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_social-networks.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="81" lean-forward="false" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+        <state relative-caret-position="306">
+          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="221" column="30" lean-forward="false" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="30" />
+          <folding>
+            <element signature="e#2636#4298#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

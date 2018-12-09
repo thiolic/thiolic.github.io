@@ -217,6 +217,10 @@
             margin-top: 6rem;
             text-transform: uppercase;
             text-decoration: none;
+
+            @include on-event() {
+                color: #7d8292;
+            }
         }
 
         > * {
