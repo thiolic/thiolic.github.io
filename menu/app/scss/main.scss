@@ -9,13 +9,8 @@
 @import 'components/menu';
 @import 'components/contact-info';
 @import 'components/logo';
-@import 'components/hero';
 @import 'footer';
 @import 'components/social-networks';
-@import 'components/gallery';
-@import 'components/about';
-@import 'components/form';
-@import 'components/contact';
 
 html {
     font-size: 62.5%;
@@ -29,4 +24,8 @@ body {
     &.-overflow-hidde {
         overflow: hidden;
     }
+}
+
+.hidden {
+    display: none;
 }

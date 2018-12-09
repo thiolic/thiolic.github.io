@@ -1,2 +1,37 @@
 .social-networks {
+    list-style: none;
+    margin: 4rem 0 0;
+    padding: 0;
+
+    &__item {
+        display: inline-block;
+        transform: translateY(30rem);
+        transition: transform .7s cubic-bezier(.78, 0, .81, 0) 1s;
+
+        a {
+            color: $color-black;
+            display: block;
+            margin-right: 1.5rem;
+
+            svg {
+                @include size(1.6rem);
+                @include trs();
+                fill: $color-black;
+            }
+
+            @include on-event() {
+
+            }
+        }
+
+        .-is-open & {
+            transform: translateY(0);
+
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    transition: transform 1.5s cubic-bezier(.19, 1, .22, 1) $i * 0.4s;
+                }
+            }
+        }
+    }
 }

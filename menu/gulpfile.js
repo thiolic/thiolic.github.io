@@ -13,7 +13,8 @@ const gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     normalize = require('node-normalize-scss').includePaths,
     rsync = require('gulp-rsync'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    svgSprite = require('gulp-svg-sprite');
 
 gulp.task('browser-sync', function () {
     browserSync({
@@ -44,9 +45,7 @@ gulp.task('styles', function () {
 gulp.task('js', function () {
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/slick/slick.min.js',
         'app/libs/object-fit-images/ofi.min.js',
-        'app/libs/fancybox/jquery.fancybox.min.js',
         'app/js/common.js',
         ])
         .pipe(babel({
@@ -65,6 +64,22 @@ gulp.task('njk', function () {
         }))
         .pipe(gulp.dest('app'))
 });
+
+const config = {
+    svg: {
+        xmlDeclaration: false
+    },
+    mode: {
+        symbol: true
+    }
+};
+
+gulp.task('svg', function () {
+    return gulp.src('app/svg/*.svg')
+        .pipe(svgSprite(config))
+        .pipe(gulp.dest('app/templates/svg/'));
+});
+
 
 gulp.task('rsync', function () {
     return gulp.src('app/**')

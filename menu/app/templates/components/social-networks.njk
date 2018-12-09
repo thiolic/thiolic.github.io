@@ -1,16 +1,21 @@
 {% macro socialLinks() %}
-    {% set socialData = {
-        'facebook': 'facebook-f',
-        'instagram': 'instagram',
-        'vkontakte': 'vk'
-    } %}
-    <section class="social-networks">
-        <ul class="social-networks__listitems">
-            {%- for item, class in socialData %}
-                <li class="social-networks__item">
-                    <a class="social-networks__link" href="#" target="_blank" title="{{ item }} (opens in a new window)"><i class="fab fa-{{ class }}"></i></a>
-                </li>
-            {%- endfor %}
-        </ul>
-    </section>
+    <ul class="social-networks">
+        {% set socialData = {
+            'behance': 'behance-icon',
+            'instagram': 'instagram-icon',
+            'linkedin': 'linkedin-icon',
+            'creative market': 'creative-market-icon',
+            'upwork': 'upwork-icon'
+        } %}
+        {%- for title, icon in socialData %}
+            <li class="social-networks__item">
+                <a href="#" title="{{ title }}">
+                    <svg class="svg-icon" role="img" aria-label="{{ title }}">
+                        <title>{{ title }}</title>
+                        <use xlink:href="#{{ icon }}"></use>
+                    </svg>
+                </a>
+            </li>
+        {%- endfor %}
+    </ul>
 {% endmacro %}
