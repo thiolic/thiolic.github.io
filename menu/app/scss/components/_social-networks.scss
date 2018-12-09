@@ -20,7 +20,10 @@
             }
 
             @include on-event() {
-
+               svg {
+                   transform: translateY(-1rem);
+                   transition: transform 1s cubic-bezier(0.04, 1.28, 0.76, -0.11);
+               }
             }
         }
 
