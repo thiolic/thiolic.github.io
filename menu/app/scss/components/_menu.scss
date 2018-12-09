@@ -49,6 +49,17 @@
             text-decoration: none;
             transform: translateY(30rem);
             transition: transform .7s cubic-bezier(.78, 0, .81, 0) 0s;
+
+            @include on-event() {
+                .menu-item__name {
+                    background-position: 0 0;
+                    transition: background-position .3s ease-in-out 0s,color .3s ease-in-out 0s;
+                }
+
+                .menu-item__label {
+                    color: $color-white;
+                }
+            }
         }
 
         .-is-open & {
@@ -256,12 +267,19 @@
 }
 
 .menu-item__name {
+    //color: #414a6b;
     display: flex;
     flex-wrap: wrap;
     letter-spacing: 3px;
     justify-content: flex-start;
     white-space: pre;
     pointer-events: none;
+    background-image: linear-gradient(left,#414a6b 50%,#fff 0);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: background-position .3s ease-in-out 0s,color .3s ease-in-out 0s;
 }
 
 .menu-item__name span {
@@ -272,11 +290,10 @@
     font-family: $font-2;
     font-weight: 300;
     display: block;
-    font-size: 5.2rem;
+    font-size: 4.5rem;
     overflow: hidden;
     letter-spacing: 1px;
-    margin: -4rem 0 0;
-    text-align: center;
+    margin: -4rem 0 0 3.5rem;
     color: $color-black;
-    transition: color 0s 0.3s, transform 2s cubic-bezier(.19, 1, .22, 1) .2s, opacity 2s cubic-bezier(.19, 1, .22, 1) .2s;
+    transition: color 0.3s cubic-bezier(0.66, 0.51, 0.61, 0.88) 0s, transform 2s cubic-bezier(.19, 1, .22, 1) .2s, opacity 2s cubic-bezier(.19, 1, .22, 1) .2s;
 }
