@@ -39,20 +39,20 @@
         font-size: 4.4rem;
         font-weight: 400;
         line-height: 6rem;
-        margin: 2rem 0;
+        margin: 0;
+        overflow-y: hidden;
 
         a {
             color: inherit;
+            font-weight: 700;
             display: block;
-            opacity: 0;
             text-decoration: none;
-            transform: translateY(-10rem);
-            transition: all .7s cubic-bezier(1, 1.41, 0.61, 0.29) 0s;
+            transform: translateY(30rem);
+            transition: transform .7s cubic-bezier(.78, 0, .81, 0) 0s;
         }
 
         .-is-open & {
             a {
-                opacity: 1;
                 transform: translateY(0);
             }
 
@@ -258,6 +258,7 @@
 .menu-item__name {
     display: flex;
     flex-wrap: wrap;
+    letter-spacing: 3px;
     justify-content: flex-start;
     white-space: pre;
     pointer-events: none;
@@ -269,20 +270,13 @@
 
 .menu-item__label {
     font-family: $font-2;
+    font-weight: 300;
     display: block;
     font-size: 5.2rem;
     overflow: hidden;
-    margin: -5rem 0 0;
+    letter-spacing: 1px;
+    margin: -4rem 0 0;
     text-align: center;
-    color: transparent;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: color 0s 0.3s, transform 2s cubic-bezier(0.05, 1.15, 0.95, 0.77) .2s, opacity 2s cubic-bezier(.19, 1, .22, 1) .2s;
-}
-
-.menu-item:hover .menu-item__label,
-.menu-item:focus .menu-item__label {
     color: $color-black;
-    opacity: 1;
-    transform: translateX(0);
+    transition: color 0s 0.3s, transform 2s cubic-bezier(.19, 1, .22, 1) .2s, opacity 2s cubic-bezier(.19, 1, .22, 1) .2s;
 }
