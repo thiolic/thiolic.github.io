@@ -22,8 +22,8 @@
           <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="664">
-                  <caret line="297" column="65" lean-forward="false" selection-start-line="297" selection-start-column="65" selection-end-line="297" selection-end-column="65" />
+                <state relative-caret-position="286">
+                  <caret line="276" column="50" lean-forward="false" selection-start-line="276" selection-start-column="50" selection-end-line="276" selection-end-column="50" />
                   <folding>
                     <element signature="e#2098#3760#0" expanded="false" />
                     <element signature="e#4464#5890#0" expanded="false" />
@@ -418,12 +418,12 @@
       <workItem from="1544118584046" duration="5301000" />
       <workItem from="1544211698588" duration="4855000" />
       <workItem from="1544286698922" duration="599000" />
-      <workItem from="1544356297069" duration="6702000" />
+      <workItem from="1544356297069" duration="6924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93433000" />
+    <option name="totallyTimeSpent" value="93655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="297" column="65" lean-forward="false" selection-start-line="297" selection-start-column="65" selection-end-line="297" selection-end-column="65" />
+        <state relative-caret-position="286">
+          <caret line="276" column="50" lean-forward="false" selection-start-line="276" selection-start-column="50" selection-end-line="276" selection-end-column="50" />
           <folding>
             <element signature="e#2098#3760#0" expanded="false" />
             <element signature="e#4464#5890#0" expanded="false" />
