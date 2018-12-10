@@ -8,7 +8,7 @@
             'upwork': 'upwork-icon'
         } %}
         {%- for title, icon in socialData %}
-            <li class="social-networks__item">
+            <li class="social-networks__item -{{ title }}">
                 <a href="#" title="{{ title }}">
                     <svg class="svg-icon" role="img" aria-label="{{ title }}">
                         <title>{{ title }}</title>

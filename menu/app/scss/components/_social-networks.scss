@@ -7,6 +7,7 @@
         display: inline-block;
         transform: translateY(30rem);
         transition: transform .7s cubic-bezier(.78, 0, .81, 0) 1s;
+        vertical-align: middle;
 
         a {
             color: $color-black;
@@ -24,6 +25,30 @@
                    fill: #7d8292;
                    transform: translateY(-1rem);
                }
+            }
+        }
+
+        &.-behance {
+            a {
+                svg {
+                    @include size(1.7rem);
+                }
+            }
+        }
+
+        &.-linkedin {
+            a {
+                svg {
+                    @include size(1.5rem);
+                }
+            }
+        }
+
+        &.-upwork {
+            a {
+                svg {
+                    @include size(2rem);
+                }
             }
         }
 
