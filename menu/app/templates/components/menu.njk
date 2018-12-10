@@ -18,9 +18,9 @@
         <ul class="menu-list">
             {%- for item in navList %}
                 <li class="menu-item">
-                    <a href="{{ item.link }}" title="{{ item.title }}">
-                        <span class="menu-item__name">{{ item.title }}</span>
-                        <span class="menu-item__label">{{ item.text }}</span>
+                    <a href="{{ item.link }}" title="{{ item.title }}" class="menu-item__link">
+                        <span class="menu-item__title">{{ item.title }}</span>
+                        <span class="menu-item__subtitle">{{ item.text }}</span>
                     </a>
                 </li>
             {%- endfor %}
