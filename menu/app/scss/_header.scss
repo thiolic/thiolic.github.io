@@ -32,6 +32,15 @@
         @include size(100%);
         background-color: $color-white;
 
+        @include breakpoint(small down) {
+            background: transparent;
+            bottom: 7rem;
+            height: 14rem;
+            left: 5rem;
+            top: auto;
+            z-index: 2;
+        }
+
         &__info {
             height: 100%;
             width: 50%;
@@ -47,6 +56,11 @@
                 width: 35%;
             }
 
+            @include breakpoint(small down) {
+                align-items: flex-start;
+                width: 100%;
+            }
+
             .-is-open & {
                 opacity: 1;
                 visibility: visible;
@@ -59,7 +73,12 @@
 
                 > svg {
                     @include size(15.8rem);
+                    @include trs();
                     margin-left: -3rem;
+
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
 
                 > a {

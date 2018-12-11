@@ -6,6 +6,10 @@
         padding-left: 5rem;
     }
 
+    @include breakpoint(small down) {
+        padding-bottom: 17rem;
+    }
+
     &-wrapper {
         align-items: center;
         display: flex;
@@ -17,6 +21,7 @@
         background: linear-gradient(to right, rgba(254, 206, 194, 1) 0%, rgba(254, 207, 199, 1) 14%, rgba(254, 206, 211, 1) 29%, rgba(254, 206, 213, 1) 45%, rgba(254, 206, 221, 1) 65%, rgba(254, 206, 225, 1) 81%, rgba(254, 206, 231, 1) 100%);
         transform: translateZ(0);
         transition: all 2s cubic-bezier(.19, 1, .22, 1) .5s;
+        z-index: 1;
 
         &.-is-open {
             width: 50%;
@@ -25,6 +30,10 @@
 
             @include breakpoint(medium down) {
                 width: 65%;
+            }
+
+            @include breakpoint(small down) {
+                width: 100%;
             }
         }
     }
@@ -116,6 +125,11 @@
         @include breakpoint(medium down) {
             right: 5rem;
             top: 5rem;
+        }
+
+        @include breakpoint(small down) {
+            right: 2rem;
+            top: 2rem;
         }
 
         &:focus {

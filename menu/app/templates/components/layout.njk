@@ -27,6 +27,9 @@
             <span class="menu-toggle__text">Menu</span>
         </button>
         <div class="header-wrapper">
+            <div class="menu-wrapper">
+                {{ mainMenu() }}
+            </div>
             <div class="header-contact">
                 <div class="header-contact__info">
                     <div class="header-contact__info-wrapper">
@@ -38,9 +41,6 @@
                         {{ socialLinks() }}
                     </div>
                 </div>
-            </div>
-            <div class="menu-wrapper">
-                {{ mainMenu() }}
             </div>
         </div>
     </header>
