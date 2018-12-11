@@ -16,14 +16,12 @@
 
             svg {
                 @include size(1.6rem);
-                transition: all 0.5s cubic-bezier(0.02, 1.67, 1, -0.09);
                 fill: $color-black;
             }
 
             @include on-event() {
                svg {
                    fill: #7d8292;
-                   transform: translateY(-1rem);
                }
             }
         }
