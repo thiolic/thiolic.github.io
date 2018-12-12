@@ -22,6 +22,10 @@
             @include on-event() {
                svg {
                    fill: #7d8292;
+
+                   @include breakpoint(small down) {
+                       fill: $color-white;
+                   }
                }
             }
         }
