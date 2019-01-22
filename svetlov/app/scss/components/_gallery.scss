@@ -27,6 +27,10 @@
             &.gallery-next {
                 position: absolute;
                 top: -5.1rem;
+
+                @include on-event() {
+                    fill: $color-1--3;
+                }
             }
 
             &.gallery-prev {
@@ -75,38 +79,17 @@
             }
         }
 
-        &::before {
-            @include absolute(0, null, null, 0);
-            @include size(100%);
-            background-color: rgba($color-black, 0.85);
-            content: '';
-            opacity: 0;
-            transform: translate(-100%, -100%);
-            transition: all 0.4s ease;
-        }
-
         img {
+            @include trs();
             display: block;
             font-family: 'object-fit: cover; object-position: center;';
             object-fit: cover;
             width: 100%;
         }
 
-        i {
-            @include absolute(50%, 50%);
-            opacity: 0;
-            transform: translate(50%, -50%);
-            transition: all 0.4s ease;
-        }
-
         @include on-event() {
-            &::before {
-                opacity: 1;
-                transform: translate(0, 0);
-            }
-
-            i {
-                opacity: 1;
+            img {
+                opacity: 0.85;
             }
         }
     }

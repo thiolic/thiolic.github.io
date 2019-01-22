@@ -10,8 +10,7 @@
                     <div class="gallery-items">
                         {%- for item in range(8) %}
                             {% set imgNumber = range(15, 30) | random %}
-                            {#<img src="//picsum.photos/315/315?image={{ imgNumber }}" alt="image description">#}
-                            <a class="gallery-item"  data-fancybox="gallery-id-{{ index }}" href="img/gal-1280.jpg"><img src="//picsum.photos/315/315?image={{ imgNumber }}" data-caption="Caption"><i class="fas fa-eye"></i></a>
+                            <a class="gallery-item"  data-fancybox="gallery-id-{{ index }}" href="img/gal-1280.jpg"><img src="//picsum.photos/315/315?image={{ imgNumber }}" data-caption="Caption"></a>
                         {%- endfor %}
                     </div>
                 </div>
