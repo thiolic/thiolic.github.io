@@ -19,10 +19,6 @@
                 fill: $color-1--1;
             }
 
-            &.slick-disabled {
-                fill: $color-1--1
-            }
-
             &.gallery-prev,
             &.gallery-next {
                 position: absolute;
@@ -30,6 +26,15 @@
 
                 @include on-event() {
                     fill: $color-1--3;
+                }
+            }
+
+            &.slick-disabled {
+                fill: $color-1--1;
+                cursor: auto;
+
+                @include on-event() {
+                    fill: $color-1--1;
                 }
             }
 

@@ -20,17 +20,17 @@
     <splitter split-orientation="horizontal" split-proportion="0.7407922">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="_gallery.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_gallery.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/components/_gallery.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="75" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+                <state relative-caret-position="648">
+                  <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gallery.njk" pinned="false" current-in-tab="true">
+          <file leaf-file-name="gallery.njk" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/templates/components/gallery.njk">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
@@ -107,7 +107,6 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/scss/_libs.scss" />
         <option value="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.js" />
-        <option value="$PROJECT_DIR$/app/scss/components/_gallery.scss" />
         <option value="$PROJECT_DIR$/app/templates/components/layout.njk" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/scss/components/_hero.scss" />
@@ -115,8 +114,9 @@
         <option value="$PROJECT_DIR$/app/scss/components/_contact.scss" />
         <option value="$PROJECT_DIR$/app/templates/components/social-networks.njk" />
         <option value="$PROJECT_DIR$/app/scss/components/_social-networks.scss" />
-        <option value="$PROJECT_DIR$/app/scss/components/_gallery.scss" />
         <option value="$PROJECT_DIR$/app/templates/components/gallery.njk" />
+        <option value="$PROJECT_DIR$/app/scss/components/_gallery.scss" />
+        <option value="$PROJECT_DIR$/app/scss/components/_gallery.scss" />
       </list>
     </option>
   </component>
@@ -462,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55482000" />
+    <option name="totallyTimeSpent" value="56148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -787,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/components/_gallery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_hero.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -842,6 +834,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/components/_gallery.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding />
         </state>
       </provider>
