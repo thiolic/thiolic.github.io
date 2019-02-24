@@ -1,0 +1,47 @@
+// Set width and height for element
+@mixin size($width, $height: $width) {
+    height: $height;
+    width: $width;
+}
+
+// Set absolute position with settings
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+    bottom: $bottom;
+    left: $left;
+    position: absolute;
+    right: $right;
+    top: $top;
+}
+
+@mixin reset-position {
+    bottom: auto;
+    left: auto;
+    position: static;
+    right: auto;
+    top: auto;
+}
+
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+
+// Set transition for element with settings
+@mixin transition($prop: all, $duration: 400ms, $easing: ease-in-out, $delay: 0ms) {
+    transition: $prop $duration $easing $delay;
+}
+// Shortcode for transition mixin
+@mixin trs($prop: all, $duration: 250ms, $easing: ease-in-out, $delay: 0ms) {
+    @include transition($prop, $duration, $easing, $delay);
+}
