@@ -1,3 +1,6 @@
 @import "_mixins/font-face";
 
 @include font-face("Helveticaneue", "../fonts/Helveticaneue/Helveticaneue");
+@include font-face("helveticaneuelight", "../fonts/Helveticaneue/helveticaneuelight");
+@include font-face("helveticaneuemedium", "../fonts/Helveticaneue/helveticaneuemedium");
+@include font-face("helveticaneuebold", "../fonts/Helveticaneue/helveticaneuebold");

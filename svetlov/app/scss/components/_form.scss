@@ -10,6 +10,7 @@ fieldset {
 
 label {
     color: $color-black;
+    font-family: $default-font-light;
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 300;
@@ -27,7 +28,7 @@ textarea {
     line-height: 2.4rem;
     outline-color: rgba($color-black, 0.1);
     padding: 0.8rem 1rem;
-    
+
     &:focus {
         background-color: $color-white;
     }
