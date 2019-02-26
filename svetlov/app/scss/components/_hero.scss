@@ -26,7 +26,6 @@
     &-title {
         @include absolute(12rem, null, null, 9rem);
         color: $color-white;
-        font-family: $default-font-light;
         font-family: $default-font-light-italic;
         font-size: 2.4rem;
         font-weight: 300;
