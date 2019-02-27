@@ -47,7 +47,7 @@ gulp.task('js', function () {
         'app/libs/slick/slick.min.js',
         'app/libs/object-fit-images/ofi.min.js',
         'app/libs/fancybox/jquery.fancybox.min.js',
-        'app/js/common.js',
+        'app/js/task-one.js',
         ])
         .pipe(babel({
             presets: ['env']
@@ -84,7 +84,7 @@ gulp.task('rsync', function () {
 gulp.task('watch', ['styles', 'njk', 'js', 'browser-sync'], function () {
     gulp.watch('app/' + syntax + '/**/*.' + syntax + '', ['styles']);
     gulp.watch('app/templates/**/*.njk', ['njk']);
-    gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+    gulp.watch(['libs/**/*.js', 'app/js/task-one.js'], ['js']);
     gulp.watch('app/*.html', browserSync.reload)
 });
 
