@@ -42,13 +42,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src([
-        'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/slick/slick.min.js',
-        'app/libs/object-fit-images/ofi.min.js',
-        'app/libs/fancybox/jquery.fancybox.min.js',
-        'app/js/task-one.js',
-        ])
+    return gulp.src('app/js/core/*.js')
         .pipe(babel({
             presets: ['env']
         }))
@@ -66,25 +60,10 @@ gulp.task('njk', function () {
         .pipe(gulp.dest('app'))
 });
 
-gulp.task('rsync', function () {
-    return gulp.src('app/**')
-        .pipe(rsync({
-            root: 'app/',
-            hostname: 'username@yousite.com',
-            destination: 'yousite/public_html/',
-            // include: ['*.htaccess'], // Includes files to deploy
-            exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
-            recursive: true,
-            archive: true,
-            silent: false,
-            compress: true
-        }))
-});
-
 gulp.task('watch', ['styles', 'njk', 'js', 'browser-sync'], function () {
     gulp.watch('app/' + syntax + '/**/*.' + syntax + '', ['styles']);
     gulp.watch('app/templates/**/*.njk', ['njk']);
-    gulp.watch(['libs/**/*.js', 'app/js/task-one.js'], ['js']);
+    gulp.watch(['libs/**/*.js', 'app/js/core/*.js'], ['js']);
     gulp.watch('app/*.html', browserSync.reload)
 });
 
