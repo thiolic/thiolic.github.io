@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
     let arr1 = [-9, 3, -5, 2, 7, 11, -6, 6, 4, -8];
     let arr2 = [];
     let arr3 = [121, 25, 57];
@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
     // Task 1
 
-    console.log('Начальный массив: ' + arr1);
+    // console.log('Начальный массив: ' + arr1);
 
     // arr2 = arr1.filter((elem) => {
     //     if (negative) {
@@ -52,59 +52,33 @@ window.addEventListener('load', () => {
 
     // Task 4
 
-
-    // minValue = Math.min.apply(null, arr7);
-    // maxValue = Math.max.apply(null, arr7);
-    //
-    // console.log('Минимальное значение в массиве: ' + minValue);
-    // console.log('Максимальное значение в массиве: ' + maxValue);
-    //
-    // minValueIndex = arr7.indexOf(minValue);
-    // maxValueIndex = arr7.indexOf(maxValue);
-    //
-    // arr7.forEach((elem, index) => {
-    //     if (minValueIndex > maxValueIndex) {
-    //         if (index < minValueIndex && index > maxValueIndex) {
-    //             console.log(elem);
-    //             summ4 += elem;
-    //         }
-    //     } else {
-    //         if (index > minValueIndex && index < maxValueIndex) {
-    //             console.log(elem);
-    //             summ4 += elem;
-    //         }
+    // arr8 = arr7.map((elem, index) => {
+    //     if (elem < minValue) {
+    //         minValue = elem;
+    //         minValueIndex = index;
+    //     } else if (elem > maxValue){
+    //         maxValue = elem;
+    //         maxValueIndex = index;
     //     }
+    //
+    //     if (index === arr7.length - 1) {
+    //         arr7.forEach((elem, index) => {
+    //             if (minValueIndex < maxValueIndex) {
+    //                 if (index > minValueIndex && index < maxValueIndex) {
+    //                     summ4 += elem;
+    //                 }
+    //             } else {
+    //                 if (index < minValueIndex && index > maxValueIndex) {
+    //                     summ4 += elem;
+    //                 }
+    //             }
+    //         });
+    //     }
+    //
+    //     return summ4;
     // });
-
+    //
     // console.log('Сумма элементов между минимальным и максимальным элементами: ' + summ4);
-
-    arr8 = arr7.map((elem, index) => {
-        if (elem < minValue) {
-            minValue = elem;
-            minValueIndex = index;
-        } else if (elem > maxValue){
-            maxValue = elem;
-            maxValueIndex = index;
-        }
-
-        if (index === arr7.length - 1) {
-            arr7.forEach((elem, index) => {
-                if (minValueIndex < maxValueIndex) {
-                    if (index > minValueIndex && index < maxValueIndex) {
-                        summ4 += elem;
-                    }
-                } else {
-                    if (index < minValueIndex && index > maxValueIndex) {
-                        summ4 += elem;
-                    }
-                }
-            });
-        }
-
-        return summ4;
-    });
-
-    console.log('Сумма элементов между минимальным и максимальным элементами: ' + summ4);
 
     // Task 5
 
@@ -120,4 +94,4 @@ window.addEventListener('load', () => {
     //
     // console.log('Среднее арифметическое положительных элементов массива: ' + avg);
 
-});
+// });
