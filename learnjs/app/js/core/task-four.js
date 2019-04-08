@@ -73,11 +73,11 @@ window.addEventListener('load', () => {
 
     // Task 4 - Сдвиг массива
 
-    console.log(arr7);
-
-    arr7.splice(2, 2 + step, 0);
-
-    console.log(arr7);
+    // console.log(arr7);
+    //
+    // arr7.splice(2, 2 + step, 0);
+    //
+    // console.log(arr7);
 
     // Task 5 - Вывести неповторяющиеся элементы массива
 
