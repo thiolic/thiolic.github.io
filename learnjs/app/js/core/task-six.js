@@ -1,23 +1,31 @@
 window.addEventListener('load', () => {
     let sum = (array) => {
-        let sumOfElements = 0;
-        array.forEach((elem) => {
-            sumOfElements += elem;
-        });
+        let sumOfElements = array.reduce((sum, elem) => {
+            return sum + elem;
+        }, 0);
 
         return sumOfElements;
     };
 
     let range = (startValue, endValue, step) => {
+        step = step || 1;
         let array = [];
 
-        for (let i = startValue; i <= endValue; i = i +1) {
-            array.push(i);
+        if (startValue < endValue) {
+            for (let i = startValue; i <= endValue; i = i + step) {
+                array.push(i);
+            }
+        } else {
+            for (let i = startValue; i >= endValue; i = i + step) {
+                array.push(i);
+            }
         }
 
+        console.log(array);
         return array;
     };
 
     console.log(range(1, 10));
-    console.log(sum(range(1, 10)));
+    console.log(sum(range(1, 10, 3)));
+    console.log(sum(range(10, 1, -2)));
 });
