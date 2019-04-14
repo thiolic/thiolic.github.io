@@ -39,5 +39,22 @@ window.addEventListener('load', () => {
         return list;
     };
 
-    console.log(arrayToList([1, 2, 3]));
+    let listToArray = (list) => {
+        let arr = [];
+
+        console.log(list);
+
+        for (let i = list; i; i = i.rest) {
+            // console.log(i);
+            // console.log(i.rest);
+            arr.push(i.value);
+        }
+
+        return arr;
+    };
+
+    // console.log(arrayToList([1, 2, 3]));
+    console.log(listToArray(arrayToList([10, 20, 30])));
+    console.log('http://qaru.site/questions/8469876/function-of-listtoarrayfunctionarraytolistarray');
 });
+
