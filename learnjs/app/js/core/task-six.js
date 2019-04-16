@@ -39,22 +39,50 @@ window.addEventListener('load', () => {
         return list;
     };
 
+    let arrayToListReduce = (arr) => {
+        let list = {};
+
+        arr.reduceRight((current, elem) => {
+            list = {value: elem, rest: list};
+        }, 0);
+
+        return list;
+    };
+
     let listToArray = (list) => {
         let arr = [];
 
-        console.log(list);
-
-        for (let i = list; i; i = i.rest) {
-            // console.log(i);
-            // console.log(i.rest);
-            arr.push(i.value);
+        while(list) {
+            arr.push(list.value);
+            list = list.rest;
         }
 
         return arr;
     };
 
+    let prepend = (elem, list) => {
+        return list = {value: elem, rest: list};
+    };
+
+    let nth = (list, num) => {
+        let counter = 0;
+        let element;
+
+        while (list) {
+            if (num === counter) {
+                element = list.value;
+            }
+            counter++;
+            list = list.rest;
+        }
+
+        return element;
+    };
+
+    console.log(arrayToListReduce([1, 2, 3]));
     // console.log(arrayToList([1, 2, 3]));
-    console.log(listToArray(arrayToList([10, 20, 30])));
-    console.log('http://qaru.site/questions/8469876/function-of-listtoarrayfunctionarraytolistarray');
+    // console.log(listToArray(arrayToList([10, 20, 30])));
+    // console.log(prepend(10, prepend(20, null)));
+    // console.log(nth(arrayToList([10, 20, 30]), 1));
 });
 
