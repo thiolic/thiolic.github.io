@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="508adff7-cb02-40b9-9901-5dd387cb2ca4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/core/task-seven.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/core/task-six.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/core/task-six.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" afterDir="false" />
@@ -20,30 +20,30 @@
     <session id="1548942310">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="958" />
+          <entry key="js" value="1667" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="958" />
+          <entry key="JavaScript" value="1667" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="3" />
+          <entry key="js" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -53,11 +53,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/core/task-six.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/core/task-seven.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -134,13 +143,14 @@
         <option value="$PROJECT_DIR$/app/js/task-one.js" />
         <option value="$PROJECT_DIR$/app/js/task-two.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/js/core/task-five.js" />
         <option value="$PROJECT_DIR$/app/js/core/task-one.js" />
         <option value="$PROJECT_DIR$/app/js/core/task-two.js" />
         <option value="$PROJECT_DIR$/app/js/core/task-three.js" />
         <option value="$PROJECT_DIR$/app/js/core/task-four.js" />
         <option value="$PROJECT_DIR$/task-six.js" />
         <option value="$PROJECT_DIR$/app/js/core/task-six.js" />
+        <option value="$PROJECT_DIR$/app/js/core/task-five.js" />
+        <option value="$PROJECT_DIR$/app/js/core/task-seven.js" />
       </list>
     </option>
   </component>
@@ -202,8 +212,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-103" />
-    <option name="y" value="31" />
+    <option name="x" value="-76" />
+    <option name="y" value="14" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -269,7 +279,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../front-end-startis-2/integration/integration-main" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
@@ -369,12 +379,13 @@
       <workItem from="1555006812660" duration="2612000" />
       <workItem from="1555258351883" duration="3075000" />
       <workItem from="1555406016959" duration="3214000" />
-      <workItem from="1555417283556" duration="4129000" />
+      <workItem from="1555417283556" duration="4768000" />
+      <workItem from="1555590048922" duration="5876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157397000" />
+    <option name="totallyTimeSpent" value="163912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,14 +400,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4088937" visible="true" weight="0.1748401" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4068768" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Gulp" order="2" sideWeight="0.5911063" side_tool="true" visible="true" weight="0.1748401" />
+      <window_info id="Gulp" order="2" sideWeight="0.5931232" side_tool="true" weight="0.1748401" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" sideWeight="0.44988865" side_tool="true" weight="0.22395274" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.24295011" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.24295011" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -515,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/core/task-five.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/core/task-three.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -536,10 +540,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/core/task-five.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/core/task-six.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/core/task-seven.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
