@@ -24,7 +24,8 @@ body {
 
 .todo__list {
     font-size: 1.6rem;
-    list-style-type: disc;
+    list-style-type: none;
+    counter-reset: li;
     margin: 1.5rem 0 0;
     padding: 0;
 }
@@ -33,6 +34,14 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    &-text {
+        &::before {
+            counter-increment: li;
+            content: counter(li)'.';
+            margin-right: 0.5rem;
+        }
+    }
 
     &-buttons {
         margin-left: 1rem;
