@@ -1,12 +1,14 @@
 window.addEventListener('load', () => {
     let mainWrapper = document.querySelector('.todo');
     let todoList = document.querySelector('.todo__list');
+    let counter = 0;
 
     let createElement = () => {
         let input = document.querySelector('.todo__input');
         let inputValue = input.value;
         let newLi = document.createElement('li');
-        let liStructure = '<span class="todo__item-text" contenteditable="false"></span>' +
+        let liStructure = '<div><label for="checkbox-' + counter + '" class="todo__item-text" contenteditable="false"></label>' +
+                        '<input type="checkbox" class="todo__checkbox" id="checkbox-' + counter + '" name="checkbox-' + counter + '"></div>' +
                         '<div class="todo__item-buttons">' +
                         '<button class="todo__item-button -edit">Edit</button>' +
                         '<button class="todo__item-button -remove">Remove</button>' +
