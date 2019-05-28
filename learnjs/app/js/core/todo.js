@@ -37,12 +37,12 @@ window.addEventListener('load', () => {
         let elemParent = elem.parentNode.parentNode;
         let editingField = elemParent.querySelector('.todo__item-text');
 
-        if (editingField.classList.contains('-active')) {
-            editingField.classList.remove('-active');
+        if (editingField.classList.contains('js-todo-active')) {
+            editingField.classList.remove('js-todo-active');
             editingField.setAttribute('contenteditable', 'false');
             elem.innerHTML = 'Edit';
         } else {
-            editingField.classList.add('-active');
+            editingField.classList.add('js-todo-active');
             editingField.setAttribute('contenteditable', 'true');
             elem.innerHTML = 'Save';
         }
@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
         let elemParent = elem.parentNode.parentNode;
         let text = elemParent.querySelector('.todo__item-text');
 
-        return text.classList.contains('-checked') ? text.classList.remove('-checked') : text.classList.add('-checked');
+        return text.classList.contains('js-todo-checked') ? text.classList.remove('js-todo-checked') : text.classList.add('js-todo-checked');
     };
 
     mainWrapper.addEventListener('click', (event) => {
