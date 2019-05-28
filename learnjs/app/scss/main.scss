@@ -9,17 +9,61 @@ body {
     line-height: 1;
 }
 
+button {
+    border: 0;
+    background-color: #007227;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: 1px dashed #fff;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #63a256;
+    }
+}
+
+input {
+    padding: 0.5rem 1rem;
+
+    &:focus {
+        outline: 1px dashed #fff;
+    }
+}
+
 .container {
     margin: 5rem auto 0;
     width: 40rem;
 }
 
+.todo {
+    background-color: #727272;
+    min-width: 30rem;
+    padding: 3rem 2rem;
+}
+
 .todo__form {
     label {
+        color: #fff;
         display: block;
         font-size: 1.6rem;
-        margin-bottom: 0.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-transform: uppercase;
     }
+}
+
+.todo__input {
+    width: calc(100% - 10rem);
+}
+
+.todo__add {
+    float: right;
 }
 
 .todo__list {
@@ -34,16 +78,25 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin: 0.5rem 0;
 
     &-text {
+        color: #fff;
+        flex-grow: 1;
+
         &::before {
             counter-increment: li;
             content: counter(li)'.';
             margin-right: 0.5rem;
         }
+
+        &.-checked {
+            text-decoration: line-through;
+        }
     }
 
     &-buttons {
+        flex-shrink: 0;
         margin-left: 1rem;
     }
 
