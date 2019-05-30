@@ -4,6 +4,14 @@ window.addEventListener('load', () => {
     let counter = 0;
     let todo;
 
+    let initButtonsHandlers = () => {
+        let handlersWrap = document.querySelector('.handlers');
+        handlersWrap.innerHTML = '<button class="js-todo-add-handlers">Add Events</button>' +
+                            '<button class="js-todo-remove-handlers">Remove Events</button>';
+    };
+
+    initButtonsHandlers();
+
     let toLocal = () => {
         todo = todoList.innerHTML;
         localStorage.setItem('todo', todo);
@@ -15,9 +23,9 @@ window.addEventListener('load', () => {
         let newLi = document.createElement('li');
         let liStructure = '<span class="todo__item-text" contenteditable="false"></span>' +
                         '<div class="todo__item-buttons">' +
-                        '<button class="todo__item-button -edit">Edit</button>' +
-                        '<button class="todo__item-button -remove">Remove</button>' +
-                        '<button class="todo__item-button -done">Done</button>' +
+                        '<button class="todo__item-button js-todo-edit">Edit</button>' +
+                        '<button class="todo__item-button js-todo-remove">Remove</button>' +
+                        '<button class="todo__item-button js-todo-done">Done</button>' +
                         '</div>';
         if (inputValue.trim().length !== 0) {
             newLi.innerHTML = liStructure;
@@ -29,8 +37,9 @@ window.addEventListener('load', () => {
         }
     };
 
-    let removeElement = (elem) => {
-        todoList.removeChild(elem.parentNode.parentNode);
+    let removeElement = () => {
+        console.log(this);
+        todoList.removeChild(this.parentNode.parentNode);
     };
 
     let editElement = (elem) => {
@@ -55,7 +64,7 @@ window.addEventListener('load', () => {
         return text.classList.contains('js-todo-checked') ? text.classList.remove('js-todo-checked') : text.classList.add('js-todo-checked');
     };
 
-    mainWrapper.addEventListener('click', (event) => {
+    mainWrapper.addEventListener('click', () => {
         let target = event.target;
 
         if (target.tagName.toLowerCase() === 'button') {
@@ -63,15 +72,11 @@ window.addEventListener('load', () => {
                 createElement();
             }
 
-            if (target.classList.contains('-remove')) {
-                removeElement(target);
-            }
-
-            if (target.classList.contains('-edit')) {
+            if (target.classList.contains('js-todo-edit')) {
                 editElement(target);
             }
 
-            if (target.classList.contains('-done')) {
+            if (target.classList.contains('js-todo-done')) {
                 completeElement(target);
             }
 
@@ -79,7 +84,16 @@ window.addEventListener('load', () => {
         }
     });
 
+    let addHandlers = () => {
+       document.querySelectorAll('.js-todo-remove').forEach((btn) => {
+           btn.addEventListener('click', removeElement);
+       });
+
+    };
+
     if (localStorage.getItem('todo')) {
         todoList.innerHTML = localStorage.getItem('todo');
     }
+
+    document.querySelector('.js-todo-add-handlers').addEventListener('click', addHandlers);
 });
