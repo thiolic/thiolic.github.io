@@ -4,19 +4,31 @@ window.addEventListener('load', () => {
     let counter = 0;
     let todo;
 
+    /**
+     * Create handler buttons
+     */
     let initButtonsHandlers = () => {
         let handlersWrap = document.querySelector('.handlers');
         handlersWrap.innerHTML = '<button class="js-todo-add-handlers">Add Events</button>' +
             '<button class="js-todo-remove-handlers">Remove Events</button>';
     };
 
+    /**
+     * Init handler buttons
+     */
     initButtonsHandlers();
 
+    /**
+     * Add data to localStorage
+     */
     let toLocal = () => {
         todo = todoList.innerHTML;
         localStorage.setItem('todo', todo);
     };
 
+    /**
+     * Add an item to the list
+     */
     function createElement() {
         let input = document.querySelector('.todo__input');
         let inputValue = input.value;
@@ -43,11 +55,17 @@ window.addEventListener('load', () => {
 
     mainWrapper.querySelector('.todo__add').addEventListener('click', createElement);
 
+    /**
+     * Remove an item from the list
+     */
     function removeElement()  {
         todoList.removeChild(this.parentNode.parentNode);
         toLocal();
     }
 
+    /**
+     * Edit an item in the list
+     */
     function editElement() {
         let elemParent = this.parentNode.parentNode;
         let editingField = elemParent.querySelector('.todo__item-text');
@@ -65,6 +83,9 @@ window.addEventListener('load', () => {
         toLocal();
     }
 
+    /**
+     * Complete an item in the list
+     */
     function completeElement() {
         let elemParent = this.parentNode.parentNode;
         let text = elemParent.querySelector('.todo__item-text');
@@ -74,6 +95,9 @@ window.addEventListener('load', () => {
         toLocal();
     }
 
+    /**
+     * Add handlers to list
+     */
     let addHandlers = () => {
         document.querySelectorAll('.js-todo-edit').forEach((btn) => {
             btn.addEventListener('click', editElement);
@@ -88,6 +112,9 @@ window.addEventListener('load', () => {
         });
     };
 
+    /**
+     * Remove handlers to list
+     */
     let removeHandlers = () => {
         document.querySelectorAll('.js-todo-edit').forEach((btn) => {
             btn.removeEventListener('click', editElement);
