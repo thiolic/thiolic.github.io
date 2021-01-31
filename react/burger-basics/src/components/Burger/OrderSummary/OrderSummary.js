@@ -3,7 +3,7 @@ import React from 'react';
 import Auxiliary from '../../../hoc/Auxiliary/Auxiliary';
 import Button from '../../UI/Button/Button';
 
-const orderSummary = ({ingredients, purchaseCanceled, purchaseContinued, price}) => {
+const orderSummary = ({ ingredients, purchaseCanceled, purchaseContinued, price }) => {
     const ingredientSummary = Object.keys(ingredients)
         .map(igKey => (
             <li key={igKey}>
